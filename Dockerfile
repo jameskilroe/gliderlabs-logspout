@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM golang:latest
 ENTRYPOINT ["/bin/logspout"]
 VOLUME /mnt/routes
 EXPOSE 80
