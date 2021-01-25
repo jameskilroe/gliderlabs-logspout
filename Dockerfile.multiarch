@@ -1,5 +1,5 @@
 # Building image
-FROM --platform=$BUILDPLATFORM golang:1.12-alpine3.10 AS build
+FROM --platform=$BUILDPLATFORM golang:latest AS build
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
 
