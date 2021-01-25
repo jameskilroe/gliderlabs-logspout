@@ -1,9 +1,5 @@
 # Building image
-FROM --platform=$BUILDPLATFORM golang:latest AS build
-ARG TARGETPLATFORM
-ARG BUILDPLATFORM
-
-RUN echo "I am running on $BUILDPLATFORM, building for $TARGETPLATFORM"
+FROM golang:latest AS build
 
 RUN apk add --update bash git
 
